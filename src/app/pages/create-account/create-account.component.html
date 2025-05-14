@@ -1,0 +1,49 @@
+<div class="wrap">
+    <div class="create-account-container flex p-6 w-full h-full justify-center items-center">
+        <div class="container flex gap-8 h-fit">
+            <div [formGroup]="accountForm" class="left-section flex flex-col flex-1 gap-y-4">
+                <h1 class="text-[72px] font-bold text-black">Take Control of <span class="primary-colorr">Your
+                        Money</span>
+                </h1>
+                <p class="text-2xl text-black">Personal budgeting is the secret to financial freedom. Start your journey
+                    today.</p>
+
+                <div class="flex w-full">
+                    <button type="button"
+                        class=" flex-1 bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2"
+                        (click)="OnClickRegister()">Register
+                    </button>
+
+                    <button type="button"
+                        class=" flex-1 bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2"
+                        (click)="OnClickLogin()">Login
+                    </button>
+
+                </div>
+
+                @if(dispalyForm){
+                <input formControlName="Name" class="input-select text-black" type="text"
+                    placeholder="Enter account name..">
+
+                <input formControlName="password" class="input-select text-black" type="text"
+                    placeholder="Enter password...">
+
+                <button *ngIf="accountForm.valid && register==true"
+                    class="btn bg-black text-white border-none w-fit text-[19px]" (click)="createAccount()">
+                    Create Account
+                </button>
+                <button *ngIf="accountForm.valid && register==false"
+                    class="btn bg-black text-white border-none w-fit text-[19px]" (click)="Login()">
+                    Login
+                </button>
+                }
+            </div>
+            <div class="right-section flex-1">
+                <img src="Images/budgeting_set_2.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-white">
+
+    </div>
+</div>
