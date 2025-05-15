@@ -1,4 +1,4 @@
 export const environment = {
-    api_Url: "http://localhost:3000"
+    api_Url: "https://expense-tracker-backend-production-735d.up.railway.app"
 
 }
