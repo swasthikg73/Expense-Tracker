@@ -3,6 +3,7 @@ var cors = require("cors");
 const { createServer } = require("node:http");
 const userRouter = require("./routes/userRoutes");
 const budgetRouter = require("./routes/budgetRoute");
+const { error } = require("node:console");
 
 const PORT = 3000;
 
@@ -13,9 +14,18 @@ app.use(express.urlencoded({ extended: true }));
 
 const server = createServer(app);
 
-// app.get("", (req, res) => {
-//   res.send("<h1>Hello world</h1>");
-// });
+app.get("", (req, res) => {
+  res.send({
+  activeStatus :true,
+  error:false
+});
+
+app.get("/", (req,res)=> {
+res.send({
+  activeStatus :true,
+  error:false
+});
+})
 
 app.use("/user", userRouter);
 app.use("/budget", budgetRouter);
