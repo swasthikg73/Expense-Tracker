@@ -18,9 +18,10 @@ app.get("", (req, res) => {
   res.send({
   activeStatus :true,
   error:false
+  })
 });
 
-app.get("/", (req,res)=> {
+app.get("/", (req, res)=> {
 res.send({
   activeStatus :true,
   error:false
@@ -36,4 +37,4 @@ server.listen(PORT, () => {
   } catch (err) {
     console.log("Error occured: ", err);
   }
-});
+})
