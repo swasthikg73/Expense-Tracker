@@ -1,0 +1,13 @@
+.deleteuser-btn{
+    border-style: solid;
+  border-color: hsl(0, 33%, 1%);
+  width: fit-content;
+  color: #000;
+  /* color: hsl(4, 66%, 63%); */
+  /* background-color: hsl(4, 66%, 63%, 0.2); */
+}
+
+.deleteuser-btn:hover{
+    background-color: #000;
+    color: white;
+}
