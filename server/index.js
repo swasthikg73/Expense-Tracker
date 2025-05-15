@@ -43,8 +43,8 @@ const express = require("express");
 const serverless = require("serverless-http"); // Wraps Express for serverless
 const cors = require("cors");
 
-const userRouter = require("../routes/userRoutes");
-const budgetRouter = require("../routes/budgetRoute");
+const userRouter = require("./routes/userRoutes");
+const budgetRouter = require("./routes/budgetRoute");
 
 const app = express();
 
