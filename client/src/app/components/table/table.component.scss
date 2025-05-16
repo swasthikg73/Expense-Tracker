@@ -19,7 +19,7 @@
     .row-data{
         @apply w-full;
         &:nth-child(odd){
-            @apply bg-customHsl-blueopacity;
+            // @apply bg-customHsl-blueopacity;
         }
     }
     .red-opacity{
@@ -29,17 +29,17 @@
     }
     .blue-opacity{
         &:nth-child(odd){
-            @apply bg-customHsl-blueopacity;
+            // @apply bg-customHsl-blueopacity;
         }
     }
     
     .amber-opacity{
         &:nth-child(odd){
-            @apply bg-customHsl-amberopacity;
+            // @apply bg-customHsl-amberopacity;
         }
     }
     
     th{
-        @apply text-2xl;
+        // @apply text-2xl;
     }
 }
